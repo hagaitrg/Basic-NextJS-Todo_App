@@ -10,13 +10,9 @@
     "mongoose": "^6.4.4",
     "next": "latest",
     "react": "18.1.0",
-<<<<<<< HEAD
-    "react-dom": "18.1.0"
-=======
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0"
->>>>>>> f619e65f18e244bfbc1bce2b320ef47cb773e909
   },
   "devDependencies": {
     "@types/node": "17.0.35",

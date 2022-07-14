@@ -1,13 +1,10 @@
-import { MongoClient } from 'mongodb'
-import type { NextPage } from 'next'
+import { NextPage } from 'next'
 import Head from 'next/head'
 import { Fragment } from 'react'
 import TodoItem from './components/todoItem/todoItem'
 import { Todo } from '../utils/types'
 
 const Home: NextPage = (props: any) => {  
-
-  console.log(props.todos.data)
   return (
     <Fragment>
       <Head>

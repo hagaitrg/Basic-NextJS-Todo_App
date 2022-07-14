@@ -1,12 +1,9 @@
 import mongoose, {Model} from "mongoose"
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
-dotenv.config()
+// dotenv.config()
 const { DATABASE_URL } = process.env
-<<<<<<< HEAD
-=======
 const dt = new Date();
->>>>>>> f619e65f18e244bfbc1bce2b320ef47cb773e909
 
 export const connect = async ()=>{
     const conn = await mongoose.connect(DATABASE_URL as string)
@@ -16,10 +13,6 @@ export const connect = async ()=>{
     const TodoSchema = new mongoose.Schema({
         activity:String,
         description:String,
-<<<<<<< HEAD
-        done:Boolean,
-    })
-=======
         done:Boolean ,
     },{ timestamps: true })
 
@@ -31,7 +24,6 @@ export const connect = async ()=>{
     //     this.created_at = date.toString()
     //     next()
     // })
->>>>>>> f619e65f18e244bfbc1bce2b320ef47cb773e909
 
     const Todo = mongoose.models.Todo || mongoose.model("Todo", TodoSchema)
 

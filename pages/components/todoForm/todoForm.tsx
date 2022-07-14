@@ -19,7 +19,7 @@ function TodoForm(props:any){
 
     return (
         <section className="text-gray-600 body-font relative">
-            <form onSubmit={formSubmitHandler}></form>
+            <form onSubmit={formSubmitHandler}>
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Create Todo Activity</h1>
@@ -51,12 +51,12 @@ function TodoForm(props:any){
                                 </div>
                             </div>
                             <div className="p-2 w-full">
-                                <button className="flex mx-auto text-white bg-cyan-900 border-0 py-2 px-8 focus:outline-none hover:bg-cyan-800 rounded text-lg">Create</button>
+                                <button className="flex mx-auto text-white bg-cyan-900 border-0 py-2 px-8 focus:outline-none hover:bg-cyan-800 rounded text-lg" type="submit">Create</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            <form/>
+            </form>
         </section>
     )
 }
